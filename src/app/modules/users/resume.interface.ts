@@ -1,4 +1,4 @@
-import { Schema} from "mongoose";
+
 
 export type IResume = {
     name: string;
