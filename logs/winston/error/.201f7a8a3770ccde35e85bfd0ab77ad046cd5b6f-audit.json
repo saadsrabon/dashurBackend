@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "D:\\Projects Files\\dashur-backend\\logs\\winston\\error\\.201f7a8a3770ccde35e85bfd0ab77ad046cd5b6f-audit.json",
+    "files": [
+        {
+            "date": 1707323285558,
+            "name": "D:\\Projects Files\\dashur-backend\\logs\\winston\\error\\phu-2024-02-07-22-error.log",
+            "hash": "59e7271902167de979739063e0fece902a4ffb2ba0eac3a3a4ec02af4bb6cac4"
+        }
+    ],
+    "hashType": "sha256"
+}
