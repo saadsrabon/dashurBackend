@@ -18,3 +18,7 @@ const createResumeController = catchAsync(
         });
     }
     );
+
+export const ResumeController = {
+    createResumeController,
+};
