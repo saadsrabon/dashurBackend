@@ -5,6 +5,18 @@ import { ResumeService } from "./resume.service";
 import { sendSuccessResponse } from "../../../shared/customResponse";
 import { IResume } from "./resume.interface";
 
+const multer = require("multer");
+
+const storage = multer.diskStorage({
+  destination: function (req, file, cb) {
+    cb(null, "./files");
+  },
+  filename: function (req, file, cb) {
+    const uniqueSuffix = Date.now();
+    cb(null, uniqueSuffix + file.originalname);
+  },
+});
+
 const createResumeController = catchAsync(
     async (req: Request, res: Response) => {
         const { resume } = req.body;

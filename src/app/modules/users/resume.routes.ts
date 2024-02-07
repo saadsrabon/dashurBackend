@@ -1,4 +1,6 @@
  import  express  from 'express';
+import { ResumeController } from './resume.controller';
  const router =express.Router();
 
-    import { ResumeController } from './resume.controller';
+
+router.post('/create-resume', ResumeController.createResumeController );
