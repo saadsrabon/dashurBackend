@@ -1,4 +1,6 @@
 const express = require("express");
+require('dotenv').config();
+
 const app = express();
 const mongoose = require("mongoose");
 app.use(express.json());
@@ -7,6 +9,7 @@ app.use(cors());
 app.use("/files", express.static("files"));
 //mongodb connection----------------------------------------------
 const mongoUrl =process.env.DATABASE_STRING;
+console.log(mongoUrl)
 
 mongoose
   .connect(mongoUrl, {
